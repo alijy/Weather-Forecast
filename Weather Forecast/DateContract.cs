@@ -1,6 +1,8 @@
 ﻿using System.Runtime.Serialization;
-using System.Runtime.Serialization.Json;
 
+/// <summary>
+/// Data contract classes.
+/// </summary>
 namespace WeatherForecast
 {
     [DataContract]
@@ -43,7 +45,8 @@ namespace WeatherForecast
          *id.
          *name.            
          *cod.
-         */ 
+         */
+
         [DataMember(Name = "coord")]
         public Coord Coord { get; set; }
 
@@ -83,7 +86,6 @@ namespace WeatherForecast
         [DataMember(Name = "cod")]
         public long Cod { get; set; }
     }
-
 
     [DataContract]
     public class Coord
